@@ -1,0 +1,18 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "Assets/*": ["src/assets/*"],
+            "Components/*": ["src/components/*"],
+            "Constants/*": ["src/constants/*"],
+            "Pages/*": ["src/pages/*"],
+            "Stores/*": ["src/stores/*"],
+            "Translations/*": ["src/translations/*"],
+            "Utils/*": ["src/utils/*"],
+            "@deriv/*": ["../*/src"]
+        },
+        "outDir": "./lib"
+    },
+    "include": ["src", "@deriv-stores.d.ts"]
+}
