@@ -1,0 +1,22 @@
+{
+  "cfd.js": "/cfd/js/cfd.js",
+  "CFDStore.js": "/cfd/js/CFDStore.js",
+  "CompareAccountsModal.js": "/cfd/js/CompareAccountsModal.js",
+  "JurisdictionModal.js": "/cfd/js/JurisdictionModal.js",
+  "CFDPasswordModal.css": "/cfd/css/cfd.main.244795d68b4f36bc3f92.css",
+  "CFDPasswordModal.js": "/cfd/js/CFDPasswordModal.js",
+  "CFDDbviOnBoarding.js": "/cfd/js/CFDDbviOnBoarding.js",
+  "CFDResetPasswordModal.js": "/cfd/js/CFDResetPasswordModal.js",
+  "CFDServerErrorDialog.js": "/cfd/js/CFDServerErrorDialog.js",
+  "CFDTopUpDemoModal.js": "/cfd/js/CFDTopUpDemoModal.js",
+  "MT5TradeModal.js": "/cfd/js/MT5TradeModal.js",
+  "TradeModal.js": "/cfd/js/TradeModal.js",
+  "CFDPasswordManagerModal.js": "/cfd/js/CFDPasswordManagerModal.js",
+  "CFDFinancialStpRealAccountSignup.js": "/cfd/js/CFDFinancialStpRealAccountSignup.js",
+  "getDXTradeWebTerminalLink.js": "/cfd/js/getDXTradeWebTerminalLink.js",
+  "getDerivEzWebTerminalLink.js": "/cfd/js/getDerivEzWebTerminalLink.js",
+  "cfd-app.css": "/cfd/css/cfd.cfd-app.615281080832458bdb1f.css",
+  "cfd-app.js": "/cfd/js/cfd.cfd-app.1b7c1de2ee6a51cd1ca4.js",
+  "404.js": "/cfd/js/cfd.404.38c9079360219103602c.js",
+  "cfd/js/cfd.vendors-node_modules_classnames_index_js-node_modules_formik_dist_formik_esm_js-node_modules_-2808e5.js": "/cfd/js/cfd.vendors-node_modules_classnames_index_js-node_modules_formik_dist_formik_esm_js-node_modules_-2808e5.37e8346511aba7ee980e.js"
+}
