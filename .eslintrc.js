@@ -1,4 +1,5 @@
 module.exports = {
+    root: true,
     extends: ['@deriv/eslint-config-deriv'],
     overrides: [
         {
@@ -14,13 +15,11 @@ module.exports = {
         {
             files: ['*.{ts,tsx}'],
             parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint'],
+            plugins: ['@typescript-eslint', 'prettier', 'import'],
             extends: [
                 'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-                'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+                'plugin:prettier/recommended', // Uses eslint-config-prettier to disable ESLint rules that would conflict with prettier
                 'plugin:react/recommended',
-                'plugin:@typescript-eslint/recommended',
-                'plugin:prettier/recommended',
             ],
             parserOptions: {
                 ecmaversion: 2018,

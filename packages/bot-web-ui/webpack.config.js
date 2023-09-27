@@ -7,6 +7,8 @@ const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
+
+
 const IS_RELEASE = process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging';
 
 const output = {
@@ -112,6 +114,10 @@ module.exports = function (env) {
                 Types: path.resolve(__dirname, 'src/types'),
             },
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            fallback: {
+                fs: false, // Add this line to disable the 'fs' module
+                path: require.resolve('path-browserify'), // Add this line to resolve 'path' using 'path-browserify'
+            },
         },
         plugins: [
             new Dotenv(),

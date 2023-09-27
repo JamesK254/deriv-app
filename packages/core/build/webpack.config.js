@@ -10,7 +10,7 @@ module.exports = function (env) {
         context: path.resolve(__dirname, '../src'),
         devServer: {
             publicPath: base,
-            open: openChromeBasedOnPlatform(process.platform),
+            open: false,
             openPage: sub_path,
             host: 'localhost.binary.sx',
             https: true,

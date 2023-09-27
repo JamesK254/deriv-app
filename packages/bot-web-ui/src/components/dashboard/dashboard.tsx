@@ -24,6 +24,7 @@ import ReactJoyrideWrapper from './react-joyride-wrapper';
 import TourSlider from './tour-slider';
 import TourTriggrerDialog from './tour-trigger-dialog';
 import Tutorial from './tutorial-tab';
+import ApolloDashboardComponent from './apollo-tab';
 
 const Dashboard = observer(() => {
     const { dashboard, load_modal, run_panel, quick_strategy } = useDBotStore();
@@ -48,7 +49,7 @@ const Dashboard = observer(() => {
         run_panel;
     const { is_strategy_modal_open } = quick_strategy;
 
-    const { DASHBOARD, BOT_BUILDER, CHART, TUTORIAL } = DBOT_TABS;
+    const { DASHBOARD, BOT_BUILDER, CHART, TUTORIAL, APOLLO_BOTS} = DBOT_TABS;
     const is_tour_complete = React.useRef(true);
     let bot_tour_token: string | number = '';
     let onboard_tour_token: string | number = '';
@@ -66,6 +67,7 @@ const Dashboard = observer(() => {
         if (tab_value === 'bot_builder') return BOT_BUILDER;
         if (tab_value === 'chart') return CHART;
         if (tab_value === 'tutorial') return TUTORIAL;
+        if (tab_value == 'apollo-bots') return APOLLO_BOTS;
         if (isNaN(tab_value) || isNaN(tab)) return active_tab;
         if (tab_value > 4 || tab > 4) return active_tab;
         return tab_value;
@@ -126,6 +128,9 @@ const Dashboard = observer(() => {
             setTourType('bot_builder');
             bot_tour_token = getTourSettings('token');
             setBotBuilderTokenCheck(bot_tour_token);
+        }
+        if (active_tab === APOLLO_BOTS && has_file_loaded) {
+            onEntered();
         }
 
         if (!is_tour_dialog_visible) {
@@ -238,6 +243,10 @@ const Dashboard = observer(() => {
                                 <Tutorial />
                             </div>
                         </div>
+                        <div icon='IcEmptyStar' label={localize('Apollo')} id='id-apollo-bots'>
+                            <ApolloDashboardComponent handleTabChange={handleTabChange} />
+                        </div>
+                        
                     </Tabs>
                 </div>
             </div>
